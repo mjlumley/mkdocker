@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  doc:
+    image: mkdocker
+    command: mkdocs serve -a 0.0.0.0:80
+    ports:
+      - 8101:80
+    working_dir: /app
+    volumes:
+      - ./serve:/app

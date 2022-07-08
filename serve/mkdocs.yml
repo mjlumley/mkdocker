@@ -1,0 +1,71 @@
+site_name: Testing MkDocs - MkDocker
+site_description: Site Testing
+
+# Configuration
+theme:
+  name: material
+  language: en
+  palette:
+    primary: black
+    accent: grey
+  font: false
+  features:
+    - instant
+
+extra_css:
+#  - css/styles.css
+#  - css/custom.css
+  - css/mermaid.css
+
+extra_javascript:
+  - js/mermaid.min.js
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - awesome-pages
+
+# Extensions
+markdown_extensions:
+  - meta
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+    #  guess_lang: false
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - markdown.extensions.attr_list
+#  - markdown_captions:
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink:
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+#  - attr_list
+  - toc:
+      permalink: true
+
+# Page tree
+nav:
+  - Instructions: index.md
+  - Mermaid: mermaid.md
+  - Sub Page: subject2/index.md
