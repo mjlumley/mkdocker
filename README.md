@@ -50,3 +50,5 @@ would be better using git on the host system within the serve directory bind.
 ## References
 
 - [MkDocs](https://www.mkdocs.org/)
+- Image on [DockerHub](https://hub.docker.com/repository/docker/mjlumley/mkdocker)
+- Source on [GitHub](https://github.com/mjlumley/mkdocker)
